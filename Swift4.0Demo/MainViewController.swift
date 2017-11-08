@@ -1,14 +1,14 @@
 //
-//  DemoViewController.swift
+//  MainViewController.swift
 //  Swift4.0Demo
 //
-//  Created by chenzetao on 2017/9/21.
+//  Created by chenzetao on 2017/11/8.
 //  Copyright © 2017年 czt.tec. All rights reserved.
 //
 
 import UIKit
 
-class DemoViewController: UIViewController {
+class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
