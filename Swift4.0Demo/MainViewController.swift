@@ -14,6 +14,17 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let waveView:WaveSailboatView = WaveSailboatView(frame:CGRect(x:0, y:100, width:UIScreen.main.bounds.width,height: 200))
+        waveView.backgroundColor = UIColor.blue
+        waveView.sailboat?.wavePosition = .WaveBottom
+        waveView.sailboat?.bgColor = UIColor.clear
+        waveView.sailboat?.isAnimation = true
+        waveView.sailboat?.isShowImage = true
+        waveView.sailboat?.waveSpeed = 0.05
+        waveView.sailboat?.waveA = 10
+        waveView.sailboat?.waveColor = UIColor.green
+        self.view.addSubview(waveView)
+        waveView.startWave()
     }
 
     override func didReceiveMemoryWarning() {
