@@ -29,7 +29,7 @@ class WaveSailboatView: UIView {
             
             imageView = UIImageView(image: UIImage(named:"sailboat"))
             
-            imageView?.frame = CGRect(x:100,y: 100,width: (self.sailboat?.imageSize.width)!,height: (self.sailboat?.imageSize.height)!)
+            imageView?.frame = CGRect(x:100,y: 0,width: (self.sailboat?.imageSize.width)!,height: (self.sailboat?.imageSize.height)!)
         }
         self.addSubview(imageView!)
     }
@@ -86,7 +86,7 @@ class WaveSailboatView: UIView {
             
         }
         
-        self.waveLayer?.fillColor = self.sailboat?.waveColor.cgColor
+        self.waveLayer?.fillColor = UIColor(named:"seablue")?.cgColor
         path.closeSubpath()
         self.waveLayer?.path = path
     

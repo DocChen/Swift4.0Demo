@@ -43,7 +43,7 @@ class Sailboat: NSObject {
         self.wavePosition = .WaveBottom
         self.isAnimation = true
         self.isShowImage = false
-        self.imageSize = CGSize(width:20,height:20)
+        self.imageSize = CGSize(width:42,height:42)
         
     }
     

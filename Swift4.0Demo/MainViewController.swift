@@ -15,14 +15,15 @@ class MainViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         let waveView:WaveSailboatView = WaveSailboatView(frame:CGRect(x:0, y:100, width:UIScreen.main.bounds.width,height: 200))
-        waveView.backgroundColor = UIColor.blue
         waveView.sailboat?.wavePosition = .WaveBottom
         waveView.sailboat?.bgColor = UIColor.clear
         waveView.sailboat?.isAnimation = true
         waveView.sailboat?.isShowImage = true
         waveView.sailboat?.waveSpeed = 0.05
         waveView.sailboat?.waveA = 10
-        waveView.sailboat?.waveColor = UIColor.green
+        waveView.sailboat?.waveColor = UIColor(named:"wavecolor")!
+        waveView.backgroundColor = waveView.sailboat?.bgColor
+        waveView.layer.addSublayer(waveView.waveLayer!)
         self.view.addSubview(waveView)
         waveView.startWave()
     }
